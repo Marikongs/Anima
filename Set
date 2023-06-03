@@ -1,0 +1,13 @@
+# Set up animation
+
+bpy.context.scene.frame_start = 1
+
+bpy.context.scene.frame_end = 60
+
+bpy.context.scene.render.image_settings.file_format = 'AVIJPEG'
+
+bpy.context.scene.render.filepath = "transition_animation.avi"
+
+# Render animation
+
+bpy.ops.render.render(animation=True)
